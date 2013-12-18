@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0, user-scalable=no”/>
+<title>搜索页面</title>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="header"><a href="javascript:history.go(-1)"><strong><</strong></a><h3>搜索页面</h3></div>
+  <article class="content">
+  <form class="search">
+      <div class="input-search">
+           <input type="text" value="" name="" class="input1">
+           <input type="button" onMouseDown="" class="search-icon" value="搜索">
+      </div>
+      <p>类别：<span>不限</span><a>国内游</a><a>出境游</a><a>周边游</a></p>
+      <p>起始日期：<span>不限</span></p>
+      <p>  <input type="text" class="Wdate" onClick="WdatePicker()">
+         至
+         <input type="text" class="Wdate" onClick="WdatePicker()">
+      </p>
+      <p>价格范围：<span>不限</span></p>
+      <p>  <input type="text">
+         至
+         <input type="text">
+      </p>
+      <div class="days">天数：<span>不限</span>
+        <label><input type="radio" name="RadioGroup2" value="" id="">1日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">2日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">3日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">4日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">5日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">6日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">7日游</label>
+        <label><input type="radio" name="RadioGroup2" value="" id="">7日以上</label>        
+      </div>
+      <input type="button" onMouseDown="" id="search-all" value="搜&nbsp;&nbsp;索">
+  </form>    
+  </article>
+</div>
+</body>
+</html>

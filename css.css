@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background:#FFF;}
+ul,li,h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;list-style: none;} /* 这将删除列表标记 */
+ul{width:100%; display:block;}
+p{margin:5px auto; padding:0;}
+img{border: none;}
+a,a:hover, a:active, a:focus {text-decoration: none;}/* ~~ 站点链接的样式必须保持此顺序，包括用于创建悬停效果的选择器组在内。 ~~ */
+.container {
+	width:100%;
+	min-width:480px;/*最小宽度480px.*/
+	height:auto;
+	}
+.content,.content-article{
+	margin:0 auto;
+	width:100%;
+	height:auto;}
+.header{position:relative;width:100%; display:block;background:#0096db;height:45px;line-height:45px;}
+.header a{position:absolute;float:left;width:80px;font-size:36px; display:block;}
+.header h3,.header a{text-align:center; color:#FFF; font-family:"微软雅黑";}
+.header h3{font-size:22px;font-weight:normal;}	
+
+/*主页*/
+.content-index{background:#E9E7E8;}
+.bigpic{width:100%;}
+ul.nav{background:url(img/line-01.gif) bottom repeat-x;height:235px;}
+ul.nav span{display:block; font-family:"微软雅黑"; font-size:20px; color:#000;}
+ul.nav li{
+	width:33%;
+	height:235px;
+	float:left;
+	background:url(img/line-02.gif) right repeat-y;}
+ul.nav a{
+	padding-top:50px;
+	text-align:center;
+	display: block;}
+#clear{ background:none; border-right:none;}
+.footer{width:100%;background:url(img/footer-bj.gif) repeat-x;}
+ul.foot{height:75px; border-top:1px #CCC solid;}
+ul.foot li{width:33.3%; float:left; height:75px; line-height:75px;}
+ul.foot li a{text-align:center;display:block;line-height:75px;height:75px; font-size:20px; font-family:"微软雅黑"; color:#fff;}
+
+/*线路列表*/
+.content-info{float:left;padding-left:10px;width:65%;height:115px;}
+ul.items{font-family:"微软雅黑";}
+ul.items li{width:100%; height:135px; padding:10px; border-bottom:1px solid #CCC;}
+ul.items li img{float:left; display:block;width:30%;height:115px; padding:5px; border:1px solid #CCC;}
+ul.items h4{color:#034E85;}
+ul.items p{width:100%;}
+ul.items p span{width:auto;margin-right:10px; background:#999; color:#fff; font-size:14px;}
+ul.items p strong{ font-size:24px; color:#FF6600;}
+
+/*旅游宝典列表*/
+ul.title{margin:0 auto;padding-top:10px;padding-bottom:10px;}
+ul.title li{
+	height:60px;
+    width:98%; 
+    margin:0 auto;
+	display:block;
+	border-radius:5px;
+    -moz-border-radius:5px; /* 老的 Firefox */
+    background:#FFF;
+	border:1px #E1E1E1 solid;
+	-moz-box-shadow: 3px 3px 5px #ccc; /* 老的 Firefox */
+    box-shadow: 3px 3px 5px #ccc;}
+ul.title a{float:left;margin-left:10px;height:60px; line-height:60px; width:97%; display:block; font-size:20px; color:#555; font-family:"微软雅黑";}
+ul.title a h4{float:left; font-weight:normal;}
+ul.title a span{float:right;}
+
+/*搜索页面*/
+form.search{width:100%;height:100%; border:0; margin:0 auto; background:#F8F8F8;padding-bottom:30px; padding-top:10px;}
+form.search input{height:40px;line-height:40px;font-size:18px; text-align:left; font-size:20px; font-family:"微软雅黑"; color:#333;}
+form.search p input{width:210px;}
+form.search p span,.days span{color:#FF6600; font-size:20px;margin-right:10px;}
+form.search p{height:50px;line-height:50px; font-family:"微软雅黑"; font-size:20px; display:block;margin-top:10px; margin-left:10px;}
+form.search a{margin-right:15px; color:#666;}
+.days{font-family:"微软雅黑"; font-size:20px; display:block; margin-top:10px; margin-left:10px;}
+.days label{color:#666; display:block;display:inline;}
+.days label input{margin-right:20px; height:20px;}
+.input-search{margin-top:15px;margin-left:10px;}
+.input-search .input1{float:left;width:80%;}
+.input-search .search-icon{width:16%; text-align:center; background:#0096db;height:45px;line-height:45px; display:block; color:#FFF; border:0;}
+#search-all,.btn{ height:50px; line-height:50px;background:#0096db; border:0; color:#FFF; width:97%; text-align:center; font-size:22px; font-family:"微软雅黑";
+     margin-top:15px;
+	 margin-left:7px;
+     border-radius:5px;
+    -moz-border-radius:5px; /* 老的 Firefox */}
+
+/*线路分类*/
+.box{width:99%; background:#FFF; border:1px #CCC solid; margin:0 auto; margin-top:20px; font-family:"微软雅黑";}
+.box-title{background:url(img/banner-items.gif) left no-repeat; height:50px; line-height:50px; border-bottom:1px #ccc solid;}
+.box-title h3{float:left; color:#FFF; font-size:22px; margin-left:10px; font-weight:normal;}
+.box-title span{ float:right; margin-right:10px; color:#666; font-size:18px;}
+ul.china li{width:98%; background:url(img/dot.gif) bottom repeat-x; margin:5px; height:50px; line-height:50px;}
+ul.china li a{font-size:16px; color:#666; display:block; float:left; width:14.2%; text-align:center; overflow:hidden;}
+.bold{font-weight:bold;}
+
+/*登录/注册*/
+form.login,form.register{width:100%;height:100%; border:0; margin:0 auto;padding-bottom:30px; padding-top:10px;}
+form.login table,form.register table{width:480px; border:0; margin:0 auto;height:auto; font-family:"微软雅黑";color:#333;}
+form.login table td,form.register table td{line-height:55px;height:55px; font-size:20px;}
+form.login span,form.register span{margin-right:20px;}
+form.login a,form.register a{color:#666; font-size:18px;}
+.input-normal{height:40px; line-height:40px;width:80%;font-size:20px; display:block;color:#555;}
+/*天气搜索*/
+form.weather{width:480px; margin:0 auto;}
+.input-set{height:45px;width:96%; margin-top:20px; margin-left:7px;}
+/*文章详情*/
+.content-article img{margin:0 auto; text-align:center;width:200px;height:100px;border:1px #ccc solid; padding:5px;}
+.content-article h1{width:100%;text-align:center;}
+.content-article p{width:98%;color:#333; margin-top:10px; margin-bottom:10px; line-height:150%; font-family:"微软雅黑";}
+.date{height:22px;text-align:center; width:100%;border-bottom:1px #999 solid; color:#999; font-size:14px; font-family:"宋体";}
+
+/*线路详情*/
+.info-title{width:100%;}
+.info-title h3{display:inline; color:#FF6600;font-size:20px;}
+.info-title span{color:#CC0033; margin-left:10px; font-family:Arial, Helvetica, sans-serif;}
+.info-title strong{font-size:24px;}
+.go-date{color:#999;}
+.go-date span{margin-left:10px;}
+.go-date a{margin-right:10px;}
+.cose span{ background:url(img/cose.gif) left no-repeat; }
+.route span{ background:url(img/route.gif) left no-repeat;}
+.point span{ background:url(img/point.gif) left no-repeat;}
+.cose span,.route span,.point span{height:40px; 
+          line-height:40px; 
+		  font-family:"微软雅黑";
+		  font-size:18px;
+		  color:#0096db;
+		  font-weight:bold; 
+		  width:100%;
+		  border-bottom:2px solid; 
+		  display:block;
+		  padding-left:40px;}
+.items-content{padding:10px;}
+.items-content h3{color:#FF6600; font-size:16px;}
+.items-content p{width:99%; color:#555;font-family:"微软雅黑";}
+/*联系*/
+.contact{border:1px #E1E1E1 solid;margin:5px; background:#FFF; font-family:"微软雅黑";font-size:18px;color:#333;}
+.contact p{display:block;line-height:45px;height:45px; margin:0;padding-left:10px; border-top:1px #E1E1E1 solid;}
